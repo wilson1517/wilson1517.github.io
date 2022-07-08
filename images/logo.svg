@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151 175" width="151" height="175">
+	<title>Wilson_logo</title>
+	<defs>
+		<image aria-label="L
+"  width="47" height="84" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAABUCAMAAAAlHJ6cAAAAAXNSR0IB2cksfwAAAaFQTFRF////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////nY9MtwAAAIt0Uk5TD0AXAD3/Xj9cW0FaQllDWERXRlVHVEhTSVJKUUxQTU5PS1ZFXT5fYDxhOmI5YzhkN2Y2ZzVoM2kyajFsMG0vbi5vLHArcSpzKXQodSd2JXckeSN6InshHx4dHBomBPrDio4Tz94RiRv7sqWxwfnuGMC1sAkQ39PU9qYCDsTwrQYB4HLvjwuz6hQ0k7Lkac8AAAHxSURBVHicldb5N9RRHMbxGddkGcZuMLZUlpRdsg0lJGtZ0kb2PUtUlEhR/NWVw30G8X33/Px6zj3n+z33cz8ul9smzDjHFe6xuUZ8hHwk8W75KOKj5b3Ex8jHEu+TjyM+Xj6B+ET5JOKT5VOIT5X3E58mn058hnyA+Ez5LOKz5XOIz5HPJj5XPpP4LPnrxKfLZxDvl08jPkU+mfgk+UTi8+RvEJ8gH098rLyPeK98NPFR8m7iI+UjiL8pf4v4fPlw4gvkC4kvkr9NfLH8HeLvypcQXypfRny5fAXxlfJVxFfL3yO+Rv4+8bXydcTXyzcQ3ygfJL5Jvpn4B/IPiW+Rf0R8q3wb8e3yj4nvkH9CfKd8F/Hd8j3E98r3Ef9U/hnx/fIDxA/KD/2nf058yP8dJj5kXr0gPiD/kviQ/fMV8XXyr4kfkkfz6s2I9ej9NaPW5yH/1vpy5PVBx5Aft34CeTNpC1PIT1sPFso/fmb21M8hb+btAc4T+q8PWr+AvFm0BceV8tgHl079u2XijR6BFeTNqi2svSd+fcMWPlx5LU+8CftoC582U7ccvfn8RRfHs/21tuTf08h6s7PmcU6HvNn1fnP0e67Qw3Y6vzv41jPemKkfS1f6lnPemH3f4MHPS33TBX+cX4f+9qO5lYsJ/AYNJGr01jtzVgAAAABJRU5ErkJggg=="/>
+		<image aria-label="W"  width="82" height="84" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABUCAMAAAAmq5C0AAAAAXNSR0IB2cksfwAAAFRQTFRF////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////vTQFZQAAABx0Uk5TQH9PPwCA/2C/MLDA8N/P4FAgkKDvEHCf0I9fr9ZSNFkAAAG6SURBVHic7dhbl4IgEABgLLAUKG+0Vv//f27mpjM4ibmzD7XMQ+eE+B0Y8DZCJENstpIjhEpBrER2exAZC4kM8V/JTOTcpBQ6ku9N4suNhcQb+X3JnJ/Ur5Kv9nhD0vCTOpKR/FDSSGGZSS1FGslIfihp+cn0NyTdI5JTUpEnHPjJ8DwiGUlWMucn1Z+QR35SM5NCotoGEwk/5/J1JFqP29/ipTEsIiVYH7uO9CYqUEO5iqxAh6IjS9BQryLBY/zY5QF9oDduBbkDx1VPZmZsOgVIapvtvcx1VYATaCOqAgEyA4cr+UOiqU9XaJ50MJNuIB3YSIdJOudJOO1+iv0vTKf1q0uz5Jc/7QeJzMbL5xwJxdYhEpnp2S0jHXwRaR+rMIwImc1lCVnAV9V2GMY4yayF59pLiCzhwgBRwryhslVqk36dSpLcXNMnIiK9gd7U81ZST6dtYnFHBZPvrS4eaBd7NByVbZJr43Vp8bbzL8CynqCh8DfW9JouKxNmxqgndVeqeOjUMUzdw9TETZusR94WqlqgGkXdXp+Rd1XPea0iK82z5J091cRoja4LcnxLyN4VQo2xC57xDY9ji4sYtDRCAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #19333d } 
+	</style>
+	<path id="Shape 1" class="s0" d="m150.8 131.3l-75.3 43.5-75.3-43.5v-87l75.3-43.5 75.3 43.5z"/>
+	<use id="L " href="#img1" x="68" y="60"/>
+	<use id="t" href="#img2" x="34" y="49"/>
+</svg>
