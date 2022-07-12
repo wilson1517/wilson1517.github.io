@@ -97,7 +97,7 @@
 								</style>
 
 							<div class="inner">
-								<h1>America%20Celebration%20Events</h1>
+								<h1>America Celebration Events</h1>
 								<div class="row">
 									<div class="column">
 									  <img src="images/America-Celebration-Events_01.jpg" alt="" onclick="myFunction(this);">
@@ -125,6 +125,17 @@
 									<div id="imgtext"></div>
 								</div>
 							</div>
+
+							<script>
+							function myFunction(imgs) {
+							  var expandImg = document.getElementById("expandedImg");
+							  var imgText = document.getElementById("imgtext");
+							  expandImg.src = imgs.src;
+							  imgText.innerHTML = imgs.alt;
+							  expandImg.parentElement.style.display = "block";
+							}
+							</script>
+							
 						</section>
 					</div>				
 
@@ -169,6 +180,7 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
+				
 
 		</body>
 	</html>
