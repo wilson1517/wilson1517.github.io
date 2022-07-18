@@ -1,6 +1,6 @@
 	<html>
 		<head>
-			<title>Wilson-Leaflet</title>
+			<title>Wilson-America%20Celebration%20Events</title>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 			<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,6 +18,13 @@
 									<a href="index.html" class="logo">
 										<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">WILSON</span>
 									</a>
+
+								<!-- Nav -->
+									<nav>
+										<ul>
+											<li><a href="#menu">Menu</a></li>
+										</ul>
+									</nav>
 
 							</div>
 						</header>
@@ -38,66 +45,105 @@
 					<div id="main">
 						</section>
 							<style>
-								.row {
-								  display: -ms-flexbox; /* IE 10 */
-								  display: flex;
-								  -ms-flex-wrap: wrap; /* IE 10 */
-								  flex-wrap: wrap;
-								  padding: 0 4px;
+							    /* The grid: Four equal columns that floats next to each other */
+								.column {
+								  float: middle;
+								  width: 25%;
+								  padding: 10px;
 								}
 								
-								/* Create two equal columns that sits next to each other */
-								.column {
-								  -ms-flex: 50%; /* IE 10 */
-								  flex: 50%;
-								  padding: 0 4px;
-								  vertical-align: middle;
-								}
+								/* Style the images inside the grid */
 								.column img {
-									display: inline-block;
-									vertical-align: middle;									
-									line-height: normal;
+								  opacity: 0.8;
+								  cursor: pointer;
 								}
-
-								/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 								
-								 @media screen and (max-width: 640px) { 
-								.column {
-									-ms-flex: 100%;
-									flex: 100%;
-									max-width: 100%;
-
-								 }
+								.column img:hover {
+								  opacity: 1;
 								}
-
 								
-							</style>
+								/* Clear floats after the columns */
+								.row:after {
+								  content: "";
+								  display: table;
+								  clear: both;
+								}
+								
+								/* The expanding image container (positioning is needed to position the close button and the text) */
+								.container {
+								  position: relative;
+								  display: none;
+								}
+								
+								/* Expanding image text */
+								#imgtext {
+								  position: absolute;
+								  bottom: 15px;
+								  left: 15px;
+								  color: white;
+								  font-size: 20px;
+								}
+								
+								/* Closable button inside the image */
+								.closebtn {
+								  position: absolute;
+								  top: 10px;
+								  right: 15px;
+								  color: white;
+								  font-size: 35px;
+								  cursor: pointer;
+								}
+								
+								</style>
+
 							<div class="inner">
-								<h1>Leaflet</h1>
+								<h1>America Celebration Events</h1>
 								<div class="row">
-									<div class="column" class="center">
-									<img src="images/LEAFLET-01_Ver1.jpg" style="width:100%;max-width:800px">
-									<img src="images/LEAFLET-01_Ver3.jpg" style="width:100%;max-width:800px">
+									<div class="column">
+									  <img src="images/America-Celebration-Events_01.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
 									</div>
-									<div class="column" class="center">
-									<img src="images/LEAFLET-01_Ver2.jpg" style="width:100%;max-width:800px">
-									<img src="images/LEAFLET-01_Ver4.jpg" style="width:100%;max-width:800px">
-									<p style="line-height: 2em"></p>
-									</div>									
-								</div>
-								
-								<div class="row">
-									<div class="column" class="center">
-									<img src="images/LEAFLET-02_Ver1.png" style="width:100%;max-width:525px" >
-									<img src="images/LEAFLET-02_Ver3.png" style="width:100%;max-width:525px" >
+									<div class="column">
+									  <img src="images/America-Celebration-Events_02.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
 									</div>
-									<div class="column" class="center">
-									<img src="images/LEAFLET-02_Ver2.png" style="width:100%;max-width:525px">
-									<img src="images/LEAFLET-02_Ver4.png" style="width:100%;max-width:525px">
+									<div class="column">
+									  <img src="images/America-Celebration-Events_03.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
+									</div>
+									<div class="column">
+									  <img src="images/America-Celebration-Events_04.png" style="max-width:250px" alt="" onclick="myFunction(this);">
+									</div>
 									<p style="line-height: 8em"></p>
-									</div>
+								 </div>
+
+								 <div class="container">
+								   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+								   <img id="expandedImg" style="width:100%">
+								   <div id="imgtext"></div>
+								 </div>
+								 
+								  
+								  <!-- The expanding image container -->
+								  <div class="container">
+									<!-- Close the image -->
+									<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+								  
+									<!-- Expanded image -->
+									<img id="expandedImg" style="width:100%">
+								  
+									<!-- Image text -->
+									<div id="imgtext"></div>
 								</div>
 							</div>
+
+							<script>
+							function myFunction(imgs) {
+							  var expandImg = document.getElementById("expandedImg");
+							  var imgText = document.getElementById("imgtext");
+							  expandImg.src = imgs.src;
+							  imgText.innerHTML = imgs.alt;
+							  expandImg.parentElement.style.display = "block";
+							}
+							</script>
+							
 						</section>
 					</div>				
 
@@ -142,6 +188,7 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
+				
 
 		</body>
 	</html>
