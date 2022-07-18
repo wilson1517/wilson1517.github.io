@@ -1,17 +1,5 @@
 	<html>
 		<head>
-			<title>Wilson-America%20Celebration%20Events</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		</head>
-		<body class="is-preload">
-			<!-- Wrapper -->
-				<div id="wrapper">
-
-					<!-- Header -->	<html>
-		<head>
 			<title>Wilson-Leaflet</title>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -71,6 +59,7 @@
 								  -ms-flex-wrap: wrap; /* IE 10 */
 								  flex-wrap: wrap;
 								  padding: 0 4px;
+								  text-align: center
 								}
 								
 								/* Create two equal columns that sits next to each other */
@@ -78,9 +67,11 @@
 								  -ms-flex: 50%; /* IE 10 */
 								  flex: 50%;
 								  padding: 0 4px;
+								  text-align: center
 								}
 								.column img {
 									vertical-align: middle;
+									text-align: center
 								}
 
 								/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -90,6 +81,7 @@
 									-ms-flex: 100%;
 									flex: 100%;
 									max-width: 100%;
+									text-align: center
 								 }
 								}
 
@@ -165,187 +157,6 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-
-		</body>
-	</html>
-						<header id="header">
-							<div class="inner">
-
-								<!-- Logo -->
-									<a href="index.html" class="logo">
-										<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">WILSON</span>
-									</a>
-
-								<!-- Nav -->
-									<nav>
-										<ul>
-											<li><a href="#menu">Menu</a></li>
-										</ul>
-									</nav>
-
-							</div>
-						</header>
-
-					<!-- Menu -->
-						<nav id="menu">
-							<h2>Menu</h2>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="Leaflet.html">Leaflet</a></li>
-								<li><a href="America Celebration Events.html">America Celebration Events</a></li>
-								<li><a href="Financials.html">Financials</a></li>
-								<li><a href="Stock Markets.html">Stock Markets</a></li>
-							</ul>
-						</nav>
-
-					<!-- Main -->					
-					<div id="main">
-						</section>
-							<style>
-							    /* The grid: Four equal columns that floats next to each other */
-								.column {
-								  float: middle;
-								  width: 25%;
-								  padding: 10px;
-								}
-								
-								/* Style the images inside the grid */
-								.column img {
-								  opacity: 0.8;
-								  cursor: pointer;
-								}
-								
-								.column img:hover {
-								  opacity: 1;
-								}
-								
-								/* Clear floats after the columns */
-								.row:after {
-								  content: "";
-								  display: table;
-								  clear: both;
-								}
-								
-								/* The expanding image container (positioning is needed to position the close button and the text) */
-								.container {
-								  position: relative;
-								  display: none;
-								}
-								
-								/* Expanding image text */
-								#imgtext {
-								  position: absolute;
-								  bottom: 15px;
-								  left: 15px;
-								  color: white;
-								  font-size: 20px;
-								}
-								
-								/* Closable button inside the image */
-								.closebtn {
-								  position: absolute;
-								  top: 10px;
-								  right: 15px;
-								  color: white;
-								  font-size: 35px;
-								  cursor: pointer;
-								}
-								
-								</style>
-
-							<div class="inner">
-								<h1>America Celebration Events</h1>
-								<div class="row">
-									<div class="column">
-									  <img src="images/America-Celebration-Events_01.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
-									</div>
-									<div class="column">
-									  <img src="images/America-Celebration-Events_02.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
-									</div>
-									<div class="column">
-									  <img src="images/America-Celebration-Events_03.jpg" style="max-width:250px" alt="" onclick="myFunction(this);">
-									</div>
-									<div class="column">
-									  <img src="images/America-Celebration-Events_04.png" style="max-width:250px" alt="" onclick="myFunction(this);">
-									</div>
-									<p style="line-height: 8em"></p>
-								 </div>
-
-								 <div class="container">
-								   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-								   <img id="expandedImg" style="width:100%">
-								   <div id="imgtext"></div>
-								 </div>
-								 
-								  
-								  <!-- The expanding image container -->
-								  <div class="container">
-									<!-- Close the image -->
-									<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-								  
-									<!-- Expanded image -->
-									<img id="expandedImg" style="width:100%">
-								  
-									<!-- Image text -->
-									<div id="imgtext"></div>
-								</div>
-							</div>
-
-							<script>
-							function myFunction(imgs) {
-							  var expandImg = document.getElementById("expandedImg");
-							  var imgText = document.getElementById("imgtext");
-							  expandImg.src = imgs.src;
-							  imgText.innerHTML = imgs.alt;
-							  expandImg.parentElement.style.display = "block";
-							}
-							</script>
-							
-						</section>
-					</div>				
-
-					<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Messenger</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" id="name" name="name" placeholder="Your name.." />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Your email.." />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Your message.."></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li>
-											<input type="button" onclick="location.href='mailto:wlison1996@yahoo.com.hk';" value="Submit" />
-										</li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Contant</h2>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/lau-wilson-450110142/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="mailto:wlison1996@yahoo.com.hk" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-						</div>
-					</footer>
-				</div>
-
-			<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				
 
 		</body>
 	</html>
