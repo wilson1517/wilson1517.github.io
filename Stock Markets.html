@@ -51,28 +51,39 @@
 								}
 
 							/* HORIZONTAL SCROLL */ 
-							.scroll-container{ 
-								overflow: auto;
-								 white-space: nowrap;
-								  padding: 5px 70px 5px 20px;
-								   background: transparent;
-								    height: 100%;
-									 border-radius:15px;
-									 }
+							.image-scroller{
+								display: grid;
+								gap: var(--size-3);
+								grid-auto-flow: column;
+								grid-auto-columns: 25%;
 
-							 .gridscroll{
-								 display:inline-block;
-								 }
-								 
-							 .gridscroll img {
-								 margin-right:22px;
-								 }
+								overflow-x: auto;
+								overscroll-behavior-inline: contain;
+							}
+							.column{
+								display: grid;
+								grid-template-rows: min-content;
+								gap: var(--size-2);
+								padding: var(--size-3);
+								background: var(--surface-2);
+								border-radius: var(--radius-2);
+							}
 
+							.column > img {
+								inline-size: 100%;
+								object-fit: cover;
+							}
+
+							
+							.flow{
+								display: grid;
+								gap:var(--size-3);
+							}
 							</style>
 
 							<div class="inner">
 								<h1>Stock Markets</h1>
-								<div class="scroll-container">
+								<div class="image-scroller">
 									<div class="column">
 										<!-- PLACE YOUR IMG URL HERE -->
 										<img src="images/Stock-Markets_01.jpg">
