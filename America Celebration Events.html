@@ -97,25 +97,26 @@
 								  }	
 								
 								/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+								@media screen and (max-width: 1280px) { 
+								.column {
+									flex: 50%;
+									width:22.5%;
+								 }
+								}
+
 								
 								@media screen and (max-width: 1080px) { 
 								.column {
 									flex: 50%;
-									width:20%;
-								 }
-								}
-
-								@media screen and (max-width: 980px) { 
-								.column {
-									flex: 50%;
-									width:15%;
+									width:35%;
 								 }
 								}
 
 								@media screen and (max-width: 880px) { 
 								.column {
 									flex: 50%;
-									width:10%;
+									width:17.5%;
 								 }
 								}
 
