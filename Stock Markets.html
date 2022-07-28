@@ -50,54 +50,80 @@
 									height: auto;
 								}
 
-							/* HORIZONTAL SCROLL */ 
-							.image-scroller{
-								display: grid;
-								gap: var(--size-3);
-								grid-auto-flow: column;
-								grid-auto-columns: 25%;
-
-								overflow-x: auto;
-								overscroll-behavior-inline: contain;
-							}
-							.column{
-								display: grid;
-								grid-template-rows: min-content ;
-								gap: var(--size-2);
-								padding: var(--size-3);
-								background: var(--surface-2);
-								border-radius: var(--radius-2);
-							}
-
-							.column > img {
-								inline-size: 100%;
-								object-fit: cover;
-							}
-
 							
-							.flow{
-								display: grid;
-								gap:var(--size-3);
-							}
+.left2 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 375px);
+    z-index: 1;
+    transform: translateX(-818.5px) translateX(50%) scale(0.7);
+    transition: all 450ms ease 0s;
+}
+
+.left1 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 375px);
+    z-index: 2;
+    transform: translateX(-409.25px) translateX(25%) scale(0.85);
+    transition: all 450ms ease 0s;
+}
+
+.centre {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 375px);
+    z-index: 3;
+    transform: scale(1);
+    transition: all 450ms ease 0s;
+}
+
+.right1 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 375px);
+    z-index: 2;
+    transform: translateX(409.25px) translateX(-25%) scale(0.85);
+    transition: all 450ms ease 0s;
+}
+
+.right2 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 375px);
+    z-index: 1;
+    transform: translateX(818.5px) translateX(-50%) scale(0.7);
+    transition: all 450ms ease 0s;
+}
 							</style>
 
 							<div class="inner">
 								<h1>Stock Markets</h1>
 								<div class="image-scroller">
-									<div class="column">
-										<img src="images/Stock-Markets_01.jpg">
+									<div class="left2">
+										<div class="column">
+											<img src="images/Stock-Markets_01.jpg">
+										</div>										
 									</div>
-									<div class="column">
+									<div class="left1">
+										<div class="column">
 										<img src="images/Stock-Markets_02.jpg">
+										</div>
 									</div>
-									<div class="column">
+									<div class="centre">
+										<div class="column">
 										<img src="images/Stock-Markets_03.jpg">
+										</div>
 									</div>
-									<div class="column">
+									<div class="right2">
+										<div class="column">
 										<img src="images/Stock-Markets_04.jpg">
+										</div>
 									</div>
-									<div class="column">
+									<div class="right1">
+										<div class="column">
 										<img src="images/Stock-Markets_05.jpg">
+										</div>
 									</div>
 								</div>
 							</div>
