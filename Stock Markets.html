@@ -63,15 +63,13 @@
 									padding: 0 2.5em;
 									max-width: 200rem;
 									height: 28rem;
-									flex: auto;
-									display: flex;
 								}
 								
 								.left-button{
 									max-width: 50px;
 									position: absolute;
 									left: 0px;
-									transform: translateX(-100%);
+									transform: translateX(-100%)translateX(2em);
 									z-index: 4;
 									border-radius: 0.6rem;
 								}
@@ -80,7 +78,7 @@
 									max-width: 50px;
 									position: absolute;
 									right: 0px;
-									transform: translateX(100%);
+									transform: translateX(100%) translateX(-2em);
 									z-index: 4;
 									border-radius: 0.6rem;
 								}
@@ -97,7 +95,7 @@
 								.left2 {
 									position: absolute;
 									top: 0;
-									left: calc(50% - 375px);
+									left: calc(57.5% - 375px);
 									z-index: 1;
 									transform: translateX(-818.5px) translateX(50%) scale(0.7);
 									transition: all 450ms ease 0s;
@@ -107,7 +105,7 @@
 								.left1 {
 									position: absolute;
 									top: 0;
-									left: calc(50% - 375px);
+									left: calc(52.5% - 375px);
 									z-index: 2;
 									transform: translateX(-409.25px) translateX(25%) scale(0.85);
 									transition: all 450ms ease 0s;
@@ -127,7 +125,7 @@
 								.right1 {
 									position: absolute;
 									top: 0;
-									left: calc(50% - 375px);
+									left: calc(52.5% - 375px);
 									z-index: 2;
 									transform: translateX(409.25px) translateX(-25%) scale(0.85);
 									transition: all 450ms ease 0s;
@@ -150,6 +148,24 @@
 									display: flex;
 									justify-content: center;
 									align-items: center; 
+								}
+
+								@media screen and (max-width:1680px) {
+									.left2{
+										width: 80%;
+									}
+									.left1{
+										width: 80%;
+									}
+									.centre{
+										width: 80%;
+									}
+									.right2{
+										width: 80%;
+									}
+									.right1{
+										width: 80%;
+									}
 								}
 							</style>
 
