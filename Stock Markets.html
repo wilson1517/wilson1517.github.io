@@ -62,20 +62,24 @@
 									margin: 0 auto;
 									max-width: 200rem;
 									height: 30rem;
+									flex: auto;
+									display: flex;
 								}
 								
 								.left-button{
-									max-width: 80px;
+									max-width: 50px;
 									position: absolute;
 									left: 0px;
+									transform: translateX(-100%);
 									z-index: 4;
 									border-radius: 0.6rem;
 								}
 
 								.right-button{
-									max-width: 80px;
+									max-width: 50px;
 									position: absolute;
 									right: 0px;
+									transform: translateX(100%);
 									z-index: 4;
 									border-radius: 0.6rem;
 								}
@@ -89,51 +93,31 @@
 								}
 								
 								.left2 {
-									position: absolute;
-									top: 0;
-									left: calc(50% - 375px);
 									z-index: 1;
-									transform: translateX(-818.5px) translateX(50%) scale(0.7);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.left1 {
-									position: absolute;
-									top: 0;
-									left: calc(50% - 375px);
 									z-index: 2;
-									transform: translateX(-409.25px) translateX(25%) scale(0.85);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 								
 								.centre {
-									position: absolute;
-									top: 0;
-									left: calc(50% - 375px);
 									z-index: 3;
-									transform: scale(1);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.right1 {
-									position: absolute;
-									top: 0;
-									left: calc(50% - 375px);
 									z-index: 2;
-									transform: translateX(409.25px) translateX(-25%) scale(0.85);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.right2 {
-									position: absolute;
-									top: 0;
-									left: calc(50% - 375px);
 									z-index: 1;
-									transform: translateX(818.5px) translateX(-50%) scale(0.7);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
