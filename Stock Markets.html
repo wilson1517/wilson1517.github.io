@@ -67,22 +67,18 @@
 								}
 								
 								.left-button{
-									position: relative;
-									display: flex;
-									justify-content: center;	
-									left: 0px;
 									max-width: 50px;
+									position: absolute;
+									left: 0px;
 									transform: translateX(-100%);
 									z-index: 4;
 									border-radius: 0.6rem;
 								}
 
 								.right-button{
-									position: relative;									
-									display: flex;
-									justify-content: center;
-									right: 0px;
 									max-width: 50px;
+									position: absolute;
+									right: 0px;
 									transform: translateX(100%);
 									z-index: 4;
 									border-radius: 0.6rem;
@@ -90,63 +86,58 @@
 
 								.angle{
 									width:100%;
-									height: 100%;
+									height: 100%;									
 									display: flex;
 									justify-content: center;
-									align-items: center;
+									align-items: center; 
 								}
 								
 								.left2 {
-									position: relative;									
-									display: flex;
-									justify-content: center;
-									max-width: 490px;
-									max-height: 245px;
-									align-items: center;z-index: 1;
+									position: absolute;
+									top: 0;
+									left: calc(50% - 375px);
+									z-index: 1;
+									transform: translateX(-818.5px) translateX(50%) scale(0.7);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.left1 {
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									max-width: 637.5x;
-									max-height: 297.5px;
+									position: absolute;
+									top: 0;
+									left: calc(50% - 375px);
 									z-index: 2;
+									transform: translateX(-409.25px) translateX(25%) scale(0.85);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 								
 								.centre {
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									max-width: 750px;
-									max-height: 350px;
+									position: absolute;
+									top: 0;
+									left: calc(50% - 375px);
 									z-index: 3;
+									transform: scale(1);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.right1 {
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									max-width: 637.5x;
-									max-height: 297.5px;
+									position: absolute;
+									top: 0;
+									left: calc(50% - 375px);
 									z-index: 2;
+									transform: translateX(409.25px) translateX(-25%) scale(0.85);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
 
 								.right2 {
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									max-width: 490px;
-									max-height: 245px;
+									position: absolute;
+									top: 0;
+									left: calc(50% - 375px);
 									z-index: 1;
+									transform: translateX(818.5px) translateX(-50%) scale(0.7);
 									transition: all 450ms ease 0s;
 									overflow: hidden;
 								}
