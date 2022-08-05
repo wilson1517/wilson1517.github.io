@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>right-arrow-angle</title>
+	<defs>
+		<image  width="194" height="300" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEsAQMAAACrFv40AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAACDUlEQVR4nO2ZMW6EMBREvdqCco/AUTgaHI2jcISUKaL8BMxsMzOJ1jYKUtj2FX4efw9aOaUU70n/ughD+ohZkyFi0WQMs9AtIj4kuX+TT0u0XLeSSZHHSqRcv5I3S6T2RqT2EE57I1I7k1mQMZx2Jko7E6WdidLORGlnojLdidDeidDeidDeidDeidDOualMQVgbhLX7cNogrP0Ipw3CmXbhtO8gpH0DYW0Q1h6tNkLgTLFV1saGWPu5obbanGlb7aq0OdO22lVDshysXTXb88HayLRIe2qiDTl/8Uq0X7l4XruqL7z2Cfri6Jo7qJ1P0Bde+wR94bWXJtrI9JQ1h0yvmntR+z/WXJshuVvy1CaSPIH2ZLWZ9JYg09lqM7lZkjwZLRkKSIGb34/PAIc6EfGJ+vOxZ+rnwM9OZwmkeUYxIDzXoyVQo1vi75z/0viaR568HUjzdn6XXlpI+0KqkebWKZD2jVgj7cfjBWn/JamRLplpP7lNpTnPEmks01aalimRRp5tpacW0sizrfTcQhp5/lmxHdMRTYrt6oirI66OOEFHtE3ajweI/8tF0j+8LyACkn4SAiDiYcbmCSLeWKz0D3+ErDQIg+TyBFFvU1Y6WelkpffchHQm8n1udNL5TOU74OCk8+wo6UyUdJ5RBba51m+hnZPebol53HXSWwhSbdvqpMnDqK1XWC/zBZPjHS6wEI6vAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="159" y="106"/>
+</svg>
