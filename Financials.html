@@ -45,14 +45,19 @@
 					<div id="main">
 						</section>
 							<style>
-								.slider{
-									position: relative;
-									display: flex;
-								}
 								.slider-bg{
 									width: 100%;
 								}
+								.slider{
+									position: relative;
+									display: flex;
+									flex-direction: row;
+								}
+								.slider>div{
+									flex: 1;
+								}
 								.slider-box {
+									max-width: 100%;
 									max-height: 225px;
 									overflow: hidden;
 									display: flex;
