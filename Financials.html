@@ -62,6 +62,7 @@
 									transform: translateX(125%) translateY(-50%);
 								}
 								.arrow-left{
+									display: inline-block;
 									content: "\003C";
 									color: #585858;
 									border: 1em;
@@ -75,6 +76,7 @@
 									border-color: #f2849e;
 								}
 								.arrow-right{
+									display: inline-block;
 									content: "\003C";
 									color: #585858;
 									border: 1em;
@@ -117,7 +119,7 @@
 									<div class="slider">
 										<div class="left-arrow">
 											<button class="arrow-right">
-												<span>&#60;</span>
+												<span style="display: flex;justify-content: center;align-items: center;">&#60;</span>
 											</button>
 										</div>
 										<div class="slider-box">
@@ -131,7 +133,7 @@
 										</div>
 										<div class="right-arrow">
 											<button class="arrow-left">
-												<span>&#62;</span>
+												<span style="display: flex;justify-content: center;align-items: center;">&#62;</span>
 											</button>
 										</div>
 									</div>
