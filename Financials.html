@@ -61,33 +61,31 @@
 									right: 0;
 									transform: translateX(125%) translateY(-50%);
 								}
-								.arrow{
+								.arrow-left{
+									content: "\003C";
+									color: #585858;
 									border: 1em;
 									border-color: #585858;
 									border-radius: 50%;
 									max-width: 48px;
 									max-height: 48px;
-									position: relative;
-									justify-content: center;
-									align-items: center;
-									overflow: hidden;
 								}
-								.arrow:hover{
+								.arrow-left:hover{
+									color: #f2849e;
 									border-color: #f2849e;
 								}
-								.span-left{
+								.arrow-left{
 									content: "\003C";
-									color:#585858;
+									color: #585858;
+									border: 1em;
+									border-color: #585858;
+									border-radius: 50%;
+									max-width: 48px;
+									max-height: 48px;
 								}
-								.span-right{
-									content: "\003E";
-									color:#585858;
-								}
-								.span-left:hover{
+								.arrow-right:hover{
 									color: #f2849e;
-								}
-								.span-right:hover{
-									color: #f2849e;
+									border-color: #f2849e;
 								}
 
 								.slider{
@@ -118,8 +116,7 @@
 									<div class="slider-bg">
 									<div class="slider">
 										<div class="left-arrow">
-											<button class="arrow">
-												<span class="span-left"></span>
+											<button class="arrow-right">
 											</button>
 										</div>
 										<div class="slider-box">
@@ -132,8 +129,7 @@
 											<img src="images/Financials-03.jpg">
 										</div>
 										<div class="right-arrow">
-											<button class="arrow">
-												<span class="span-right"></span>
+											<button class="arrow-left">
 											</button>
 										</div>
 									</div>
