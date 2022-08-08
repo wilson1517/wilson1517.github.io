@@ -62,8 +62,8 @@
 									transform: translateX(125%) translateY(-50%);
 								}
 								.arrow{
-									background-color: #585858;
-									border: none;
+									border: 1em;
+									border-color: #585858;
 									border-radius: 50%;
 									max-width: 48px;
 									max-height: 48px;
@@ -73,7 +73,21 @@
 									overflow: hidden;
 								}
 								.arrow:hover{
-									background-color: #f2849e;
+									border-color: #f2849e;
+								}
+								.span-left{
+									content: "\003C";
+									color:#585858;
+								}
+								.span-right{
+									content: "\003E";
+									color:#585858;
+								}
+								.span-left:hover{
+									color: #f2849e;
+								}
+								.span-right:hover{
+									color: #f2849e;
 								}
 
 								.slider{
@@ -105,7 +119,7 @@
 									<div class="slider">
 										<div class="left-arrow">
 											<button class="arrow">
-												<span style="color:white">&#60;</span>
+												<span class="span-left"></span>
 											</button>
 										</div>
 										<div class="slider-box">
@@ -119,7 +133,7 @@
 										</div>
 										<div class="right-arrow">
 											<button class="arrow">
-												<span style="color:white">&#62;</span>
+												<span class="span-right"></span>
 											</button>
 										</div>
 									</div>
