@@ -70,7 +70,8 @@
 									max-height: 36px;
 									position: relative;
 									justify-content: center;
-									align-items: center;									
+									align-items: center;
+									transition: 0.6s ease;
 								}
 								.arrow:hover{
 									background-color: #f2849e;
@@ -93,40 +94,44 @@
 									display: flex;
 									justify-content: center;
 									align-items: center;
-								}								
+									transition: 0.6s ease;
+									animation-duration: 1.5s;
+								}
+								.center {
+									max-width: 100%;
+									max-height: 225px;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									transition: 0.6s ease;
+									animation-duration: 1.5s;
+								}
+
 							</style>
 
 							<script>
+							let slideIndex = 1;
+								showSlides(slideIndex);
 								
-								$('.center').slick(
-									{
-										enterMode: true,
-										centerPadding: '60px',
-										slidesToShow: 3,
-										responsive: 
-										[
-											{
-												breakpoint: 768,
-												settings: {
-												arrows: false,
-												centerMode: true,
-												centerPadding: '40px',
-												slidesToShow: 3
-												}
-											},
-											{
-												breakpoint: 480,
-												settings: 
-												{
-													arrows: false,
-													centerMode: true,
-														centerPadding: '40px',
-													slidesToShow: 1
-												}
-										}
-									]
+								// Next/previous controls
+								function plusSlides(n) {
+								  showSlides(slideIndex += n);
 								}
-							);
+								
+								// Thumbnail image controls
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+								
+								function showSlides(n) {
+								  let i;
+								  let slides = document.getElementsByClassName("slider-box");
+								  if (n > slides.length) {slideIndex = 1}
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								  }
+								}
 							</script>
 
 							<div class="inner">
@@ -136,7 +141,7 @@
 									<div class="slider">
 										<div class="left-arrow">
 											<button class="arrow">
-												<img src="images/left-arrow-angle.svg" style="padding:inherit;">
+												<img src="images/left-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(-1)">
 											</button>
 										</div>
 										<div class="slider-box">
@@ -150,7 +155,7 @@
 										</div>
 										<div class="right-arrow">
 											<button class="arrow">
-												<img src="images/right-arrow-angle.svg" style="padding:inherit;">
+												<img src="images/right-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(+1)">
 											</button>
 										</div>
 									</div>
@@ -200,8 +205,7 @@
 				<script src="assets/js/browser.min.js"></script>
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<script src="assets/js/slick/js"></script>				
+				<script src="assets/js/main.js"></script>		
 
 		</body>
 	</html>
