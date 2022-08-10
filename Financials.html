@@ -81,12 +81,14 @@
 									position: relative;
 									display: flex;
 									flex-direction: row;
+									z-index: 300;
+									outline: none;
 								}
 								.slider>div{
 									flex: 1;
 								}
 
-								.slider-box {
+								.item {
 									max-width: 100%;
 									max-height: 225px;
 									margin: 0.5em;
@@ -97,68 +99,115 @@
 									transition: 0.6s ease;
 									animation-duration: 1.5s;
 								}
-								.center {
-									max-width: 100%;
-									max-height: 225px;
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									transition: 0.6s ease;
-									animation-duration: 1.5s;
+
+								.slick-slide:after {
+									content:'';
+									position: absolute;
+									z-index: 2;
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									background: rgba(0,0,0,.5);
+									transition: transform .4s;
+								}
+								.item.slick-slide {
+									transform: scale(0.7)  translate(640px);
+								}
+
+								.item.slick-slide.slick-center + .slick-slide {
+									transform: scale(0.8) translate(-250px);
+									z-index: 10;
+								}
+
+								.item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+									transform: scale(0.7)  translate(-640px);
+									z-index: 5;
+								}
+
+								.item.slick-slide.slick-active {
+									transform: scale(0.8) translate(250px);
+								}
+
+								.item.slick-slide.slick-center {
+								/* margin: 0 -10%; */
+									transform: scale(1);
+									z-index: 30;
+								}
+
+								.slick-center:after {
+									opacity: 0;
 								}
 
 							</style>
 
 							<script>
-							let slideIndex = 1;
-								showSlides(slideIndex);
+							$('.slider').slick({
+								slidesToShow: 3,
+								slidesToScroll: 1,
+								arrows: true,
+								dots: false,
+								centerMode: true,
+								variableWidth: true,
+								infinite: true,
+								focusOnSelect: true,
+								cssEase: 'linear',
+								touchMove: true,
+								prevArrow:'<button class="left-arrow"> < </button>',
+								nextArrow:'<button class="right-arrow"> > </button>',
 								
-								// Next/previous controls
-								function plusSlides(n) {
-								  showSlides(slideIndex += n);
-								}
-								
-								// Thumbnail image controls
-								function currentSlide(n) {
-								  showSlides(slideIndex = n);
-								}
-								
-								function showSlides(n) {
-								  let i;
-								  let slides = document.getElementsByClassName("slider-box");
-								  if (n > slides.length) {slideIndex = 1}
-								  if (n < 1) {slideIndex = slides.length}
-								  for (i = 0; i < slides.length; i++) {
-									slides[i].style.display = "none";
-								  }
-								}
+								//         responsive: [                        
+								//             {
+								//               breakpoint: 576,
+								//               settings: {
+								//                 centerMode: false,
+								//                 variableWidth: false,
+								//               }
+								//             },
+								//         ]
+							  });
+							  
+							  
+							  var imgs = $('.slider img');
+							  imgs.each(function(){
+								var item = $(this).closest('.item');
+								item.css({
+								  'background-image': 'url(' + $(this).attr('src') + ')', 
+								  'background-position': 'center',            
+								  '-webkit-background-size': 'cover',
+								  'background-size': 'cover', 
+								});
+								$(this).hide();
+							  });								
 							</script>
 
 							<div class="inner">
 								<h1>America Celebration Events</h1>
 								<div class="row">
 									<div class="slider-bg">
-									<div class="slider">
-										<div class="left-arrow">
-											<button class="arrow">
-												<img src="images/left-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(-1)">
-											</button>
+										<div class="slider-wrap">
+											<div class="slider">
+												<div class="left-arrow">
+													<button class="arrow">
+														<img src="images/left-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(-1)">
+													</button>
+												</div>
+												<div class="item">
+													<img src="images/Financials-01.jpg">
+												</div>
+												<div class="item">
+													<img src="images/Financials-02.jpg">
+												</div>
+												<div class="item">											
+													<img src="images/Financials-03.jpg">
+												</div>
+												<div class="right-arrow">
+													<button class="arrow">
+														<img src="images/right-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(+1)">
+													</button>
+												</div>
+											</div>
 										</div>
-										<div class="slider-box">
-											<img src="images/Financials-01.jpg">
-										</div>
-										<div class="slider-box">
-											<img src="images/Financials-02.jpg">
-										</div>
-										<div class="slider-box">											
-											<img src="images/Financials-03.jpg">
-										</div>
-										<div class="right-arrow">
-											<button class="arrow">
-												<img src="images/right-arrow-angle.svg" style="padding:inherit;" onclick="plusSlides(+1)">
-											</button>
-										</div>
-									</div>
 									</div>
 								</div>
 							</div>
