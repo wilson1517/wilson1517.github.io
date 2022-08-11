@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>arrow-angle-svg</title>
+	<defs>
+		<image width="196" height="304" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAEwAQMAAADSHEyTAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAAB60lEQVR4nO2ZMXKDMBBF0aig5AgchaNJR9NROELKFJnI4HhdZPcRW17sJIPaV+jps/oDdtfdtUJ9AzLUTyBTrdkmqdYC29Q6myQu5N0k/UI+QI3IuBBbe1Gr1SSVSDiTbJCIpD+TYpAByYTkLG0GV4kEJBFJj2REMiFJSCqRgCQiGS6kkLRBJiQXaeOZViIirWenRyLSekZFWs+1SOtbItL6CovA/B1InjqCq3QmaX0cV+lrnq7SPknLNr7SapsWacnTVzp7SEuevtLFQ1ry9JWeb5d+5Lq1SB8dcXTE0RF/qyNY+uUd8exiO15+WmZa5ynH0dJCtLQcVCctRElvvGkLUUCI8f2WSFqI8QWZSHrjAyVBnjeQ0rAPu/F5jAx+TNTQ5ufDz5TngGeHi597l+eaW4cv/UZRSAg6UzkqX6CnaetMW7R3Sltn2qK905DMLtqSqbN2cdGWTJ21s4u2ZOqrvfFzyx3aD/UFa9/TF6x91Fyr9v+tOSX3m2ou76wtmb6uL3aqOZ++2KnmfPri6TXnM9sRCf/u3zER7YzamoxIJNOC2poEJB2ThGRCMiDpkUQkAUnHJEFukqlFBiQ9PFPRtkhA0tlTta7JnNF1jeZcr2tAsmrbf+5GiO1LLtskwXFWOVt63WgG0rxO70weGFKRNEcAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" transform="matrix(0,1.684,-1.684,0,511.936,81)"/>
+</svg>
