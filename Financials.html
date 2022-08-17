@@ -44,88 +44,146 @@
 						<!-- Main -->					
 						<div id="main">
 							</section>
-								<style>
-									.slider-bg{
-										width: 100%;
-									}
-
+								<style>									
 									.container {
 										display: flex;
 										align-items: center;
 										justify-content: center;
 									}
-
+									
 									.slider {
 										display: block;
 										position: relative;
 										width: 100%;
 										max-width: 900px;
 										margin: 10px;
+										background-color: white;
 										overflow: hidden;
 									}
-
-									.slider_slides {
-										width: 100%;
-										max-width: 800px;
+									
+									.slider__slides {
+									  width: 100%;
+									  padding-top: 66%;
 									}
-
-									.slider_link {
+									
+									.slider__slide {
+										position: absolute;
 										display: flex;
 										align-items: center;
 										justify-content: center;
-										position: absolute;
+										font-size: 50px;
+										font-weight: bold;   
 										top: 0;
 										left: 0;
 										width: 100%;
 										height: 100%;
+										background-color: lemonchiffon;
 										transition: 1s;
 										opacity: 0;
 									}
-
-									.slider_slide.active {
+									
+									.slider__slide.active {
 										opacity: 1;
 									}
-
-									.left-arrow{
+									
+									.slider__slide img {
+									  width: 100%;
+									}
+									
+									.slider__nav-button {
 										position: absolute;
+										height: 70px;
+										width: 70px;
+										background-color: #333;
+										opacity: .8;
+										cursor: pointer;
+									}
+									
+									#nav-button--prev {
 										top: 50%;
 										left: 0;
-										transform: translateX(-125%) translateY(-50%) rotate(-90deg);
+										transform: translateY(-50%);
 									}
-									.right-arrow{
-										position: absolute;
+									
+									#nav-button--next {
 										top: 50%;
 										right: 0;
-										transform: translateX(125%) translateY(-50%) rotate(90deg);
+										transform: translateY(-50%);
 									}
-									.arrow{
-										background-color: #585858;
-										border: none;
+									
+									#nav-button--prev::after,
+									#nav-button--next::after {
+										content: "";
+										position: absolute;
+										border: solid white;
+										border-width: 0 4px 4px 0;
+										display: inline-block;
+										padding: 3px;
+										width: 40%;
+										height: 40%;
+									}
+									
+									#nav-button--next::after{
+										top: 50%;
+										right: 50%;
+										transform: translate(25%, -50%) rotate(-45deg);
+									}
+									
+									#nav-button--prev::after {
+										top: 50%;
+										right: 50%;
+										transform: translate(75%, -50%) rotate(135deg);
+									}
+									
+									.slider__nav {
+										position: absolute;
+										bottom: 3%;
+										left: 50%;
+										transform: translateX(-50%);
+										text-align: center;
+									}
+									
+									.slider__navlink {
+										display: inline-block;
+										height: 20px;
+										width: 20px;
 										border-radius: 50%;
-										padding: revert;
-										max-width: 36px;
-										max-height: 36px;
-										position: relative;
-										justify-content: center;
-										align-items: center;
-										transition: 0.6s ease;
+										border: 1px #fff solid;
+										background-color: #333;
+										opacity: 1;
+										margin: 0 10px 0 10px;
+										cursor: pointer;
 									}
-									.arrow:hover{
-										background-color: #f2849e;
+									
+									.slider__navlink.active {
+										background-color: #fff;
+										border: 1px #333 solid;
 									}
-
+									
+									
+									@media screen and (max-width: 640px) {
+									  .slider__nav-button {
+										height: 40px;
+										width: 40px;
+									  }
+									  .slider__navlink {
+										height: 12px;
+										width: 12px;
+									  }
+									}
 								</style>
 
 								<script>
-									let slides = document.getElementsByClassName("slider_link");
-									let navlinks = document.getElementsByClassName("slider_link");
+									let slides = document.getElementsByClassName("slider__slide");
+									let navlinks = document.getElementsByClassName("slider__navlink");
 									let currentSlide = 0;
-									document.getElementById("right-arrow").addEventListener("click", () => {
-											changeSlide(currentSlide + 1)
-										});
-									document.getElementById("left-arrow").addEventListener("click", () => {
-											changeSlide(currentSlide - 1)
-										});
+
+									document.getElementById("nav-button--next").addEventListener("click", () => {
+										changeSlide(currentSlide + 1)
+									});
+									document.getElementById("nav-button--prev").addEventListener("click", () => {
+										changeSlide(currentSlide - 1)
+									});
 
 									function changeSlide(moveTo) {
 										if (moveTo >= slides.length) {moveTo = 0;}
@@ -138,6 +196,14 @@
 										
 										currentSlide = moveTo;
 									}
+
+									document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
+										bullet.addEventListener('click', () => {
+											if (currentSlide !== bulletIndex) {
+												changeSlide(bulletIndex);
+											}
+										})
+									})
 								</script>
 
 								<div class="inner">
@@ -146,26 +212,24 @@
 										<div class="slider-bg">
 											<div class="container">
 												<div class="slider">
-													<div class="left-arrow">
-														<button class="arrow">
-															<img src="images/arrow-angle-white.svg" style="padding:inherit;" onclick="plusSlides(-1)">
-														</button>
-													</div>
-													<div class="slider_slides">
-														<div class="slider_slide.active">
-															<img src="images/Financials-01.jpg">
+													<div class="slider__slides">
+														<div class="slider__slide active">
+														<img src="images/Financials-01.jpg">
+															</div>
+														<div class="slider__slide">
+														  <img src="images/Financials-02.jpg">
 														</div>
-														<div class="slider_link">
-															<img src="images/Financials-02.jpg">
+														<div class="slider__slide">
+														  <img src="images/Financials-03.jpg">
 														</div>
-														<div class="slider_link">											
-															<img src="images/Financials-03.jpg">
-														</div>
-													</div>
-													<div class="right-arrow">
-														<button class="arrow">
-															<img src="images/arrow-angle-white.svg" style="padding:inherit;" onclick="plusSlides(+1)">
-														</button>
+													  </div>
+													  <div id="nav-button--prev" class="slider__nav-button"></div>
+													  <div id="nav-button--next" class="slider__nav-button"></div>
+													  	<div class="slider__nav">
+															<div class="slider__navlink active"></div>
+															<div class="slider__navlink"></div>
+															<div class="slider__navlink"></div>
+													 	</div>
 													</div>
 												</div>
 											</div>
