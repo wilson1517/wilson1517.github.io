@@ -49,6 +49,46 @@
 										width: 100%;
 									}
 
+									.container {
+										display: flex;
+										align-items: center;
+										justify-content: center;
+									}
+
+									.slider {
+										display: block;
+										position: relative;
+										width: 100%;
+										max-width: 900px;
+										margin: 10px;
+										overflow: hidden;
+									}
+
+									.slider__slides {
+									width: 100%;
+									padding-top: 66%;
+									}
+
+									.slider__slide {
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										font-size: 50px;
+										font-weight: bold;   
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										background-color: lemonchiffon;
+										transition: 1s;
+										opacity: 0;
+									}
+
+									.slider__slide.active {
+										opacity: 1;
+									}
+
 									.left-arrow{
 										position: absolute;
 										top: 50%;
@@ -77,39 +117,11 @@
 										background-color: #f2849e;
 									}
 
-									.slider{
-										position: relative;
-										display: flex;
-										flex-direction: row;
-										z-index: 300;
-										outline: none;
-									}
-									.slider>div{
-										flex: 1;
-									}
-
-									.slider-link {
-										max-width: 100%;
-										max-height: 225px;
-										margin: 0.5em;
-										overflow: hidden;
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										transition: 0.6s ease;
-										animation-duration: 1.5s;
-									}
-									.slider-link.active {
-										max-width: auto;
-										max-width: 440px;
-										overflow: visible;
-									}
-									
 								</style>
 
 								<script>
 									let slides = document.getElementsByClassName("s");
-									let navlinks = document.getElementsByClassName("slider__navlink");
+									let navlinks = document.getElementsByClassName("slider_link");
 									let currentSlide = 0;
 									document.getElementById("right-arrow").addEventListener("click", () => {
 											changeSlide(currentSlide + 1)
@@ -135,7 +147,7 @@
 									<h1>Financials</h1>
 									<div class="row">
 										<div class="slider-bg">
-											<div class="slider-wrap">
+											<div class="container">
 												<div class="slider">
 													<div class="slider_slides">
 														<div class="left-arrow">
@@ -143,13 +155,13 @@
 																<img src="images/arrow-angle-white.svg" style="padding:inherit;" onclick="plusSlides(-1)">
 															</button>
 														</div>
-														<div class="slider-link.active">
+														<div class="slider_slide.active">
 															<img src="images/Financials-01.jpg">
 														</div>
-														<div class="slider-link">
+														<div class="slider_link">
 															<img src="images/Financials-02.jpg">
 														</div>
-														<div class="slider-link">											
+														<div class="slider_link">											
 															<img src="images/Financials-03.jpg">
 														</div>
 														<div class="right-arrow">
