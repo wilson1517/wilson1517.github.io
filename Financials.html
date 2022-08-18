@@ -66,8 +66,8 @@
 										border: none;
 										border-radius: 50%;
 										padding: revert;
-										max-width: 36px;
-										max-height: 36px;
+										max-width: 24px;
+										max-height: 24px;
 										position: relative;
 										justify-content: center;
 										align-items: center;
@@ -93,10 +93,16 @@
 										max-height: 500px;
 										overflow: hidden;
 										margin: 0.5em;
+										text-align: center;
 										justify-content: center;
 										align-items: center;
 										transition: 0.6s ease;
 										animation-duration: 1.5s;
+									}
+									.box_image {
+										display: flex;
+										justify-content: center; 
+										align-items: center;
 									}
 
 									.dot {
@@ -168,13 +174,19 @@
 														</button>
 													</div>
 													<div class="slider-box fade" style="display:block">
-														<img src="images/Financials-01.jpg">
+														<div calss="box_image">
+															<img src="images/Financials-01.jpg">
+														</div>
 													</div>
 													<div class="slider-box fade">
-														<img src="images/Financials-02.jpg">
+														<div calss="box_image">
+															<img src="images/Financials-02.jpg">
+														</div>
 													</div>
-													<div class="slider-box fade">											
-														<img src="images/Financials-03.jpg">
+													<div class="slider-box fade">
+														<div calss="box_image">
+															<img src="images/Financials-03.jpg">
+														</div>
 													</div>
 													<div class="right-arrow">
 														<button class="arrow">
