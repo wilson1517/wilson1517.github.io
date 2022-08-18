@@ -4,6 +4,8 @@
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 				<link rel="stylesheet" href="assets/css/main.css" />
+				<link rel="stylesheet" href="assets/css/slick.css" />
+				<link rel="stylesheet" href="assets/css/slick-theme.css"/>
 				<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 			</head>
 			<body class="is-preload">
@@ -49,13 +51,13 @@
 										width: 100%;
 									}
 
-									.left-arrow{
+									.slick-prev{
 										position: absolute;
 										top: 50%;
 										left: 0;
 										transform: translateX(-125%) translateY(-50%) rotate(-90deg);
 									}
-									.right-arrow{
+									.slick-next{
 										position: absolute;
 										top: 50%;
 										right: 0;
@@ -101,16 +103,14 @@
 									}
 								</style>
 
-								<script>							
-								</script>
-
 								<div class="inner">
 									<h1>Financials</h1>
 									<div class="row">
 										<div class="slider-bg">
 											<div class="slider-wrap">
 												<div class="slider">
-													<div class="left-arrow">
+													<ul class="single-item">
+													<div class="slick-prev">
 														<button class="arrow">
 															<img src="images/arrow-angle-white.svg" style="padding:inherit;" onclick="plusSlides(-1)">
 														</button>
@@ -124,11 +124,12 @@
 													<div class="slider-box">											
 														<img src="images/Financials-03.jpg">
 													</div>
-													<div class="right-arrow">
+													<div class="slick-next">
 														<button class="arrow">
 															<img src="images/arrow-angle-white.svg" style="padding:inherit;" onclick="plusSlides(+1)">
 														</button>
 													</div>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -177,7 +178,17 @@
 					<script src="assets/js/browser.min.js"></script>
 					<script src="assets/js/breakpoints.min.js"></script>
 					<script src="assets/js/util.js"></script>
-					<script src="assets/js/main.js"></script>		
-
+					<script src="assets/js/main.js"></script>
+					<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+					<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+					<script src="assets/js/slick.min.js"></script>
+					
+					<script>
+						$(document).ready(function(){
+					$('.single-item').slick({
+						setting-name: setting-value
+					});
+					});
+					</script>
 			</body>
 		</html>
