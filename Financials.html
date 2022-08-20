@@ -131,10 +131,11 @@
 									}
 
 									@media screen and (max-width: 1000px) {
-									.arrow{
-										display: none;
-									}
-									}
+
+										.slider{
+											max-width: 80%;
+											margin: auto;											
+										}
 									}
 								</style>
 
@@ -167,12 +168,6 @@
 								slides[slideIndex-1].style.display = "block";
 								dots[slideIndex-1].className += " active";
 								}
-
-								const slider = $(".slider-box");
-								slider.slick({
-									dots: true,
-								mobileFirst:true,
-									}); 
 								</script>
 
 								<div class="inner">
